@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		323F26D62B23DF1E008B1A29 /* SwiftUI_Intro2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F26D52B23DF1E008B1A29 /* SwiftUI_Intro2App.swift */; };
-		323F26D82B23DF1E008B1A29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F26D72B23DF1E008B1A29 /* ContentView.swift */; };
+		323F26D82B23DF1E008B1A29 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F26D72B23DF1E008B1A29 /* TasksView.swift */; };
 		323F26DA2B23DF22008B1A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323F26D92B23DF22008B1A29 /* Assets.xcassets */; };
 		323F26DD2B23DF22008B1A29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323F26DC2B23DF22008B1A29 /* Preview Assets.xcassets */; };
+		323F26E52B23F018008B1A29 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F26E42B23F018008B1A29 /* ToDoListView.swift */; };
+		323F26E72B23F452008B1A29 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323F26E62B23F452008B1A29 /* ToDoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		323F26D22B23DF1E008B1A29 /* SwiftUI-Intro2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Intro2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		323F26D52B23DF1E008B1A29 /* SwiftUI_Intro2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Intro2App.swift; sourceTree = "<group>"; };
-		323F26D72B23DF1E008B1A29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		323F26D72B23DF1E008B1A29 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		323F26D92B23DF22008B1A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323F26DC2B23DF22008B1A29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		323F26E32B23DFF1008B1A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		323F26E42B23F018008B1A29 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
+		323F26E62B23F452008B1A29 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,13 @@
 		323F26D42B23DF1E008B1A29 /* SwiftUI-Intro2 */ = {
 			isa = PBXGroup;
 			children = (
+				323F26E32B23DFF1008B1A29 /* Info.plist */,
 				323F26D52B23DF1E008B1A29 /* SwiftUI_Intro2App.swift */,
-				323F26D72B23DF1E008B1A29 /* ContentView.swift */,
+				323F26D72B23DF1E008B1A29 /* TasksView.swift */,
+				323F26E42B23F018008B1A29 /* ToDoListView.swift */,
 				323F26D92B23DF22008B1A29 /* Assets.xcassets */,
 				323F26DB2B23DF22008B1A29 /* Preview Content */,
+				323F26E62B23F452008B1A29 /* ToDoModel.swift */,
 			);
 			path = "SwiftUI-Intro2";
 			sourceTree = "<group>";
@@ -137,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				323F26D82B23DF1E008B1A29 /* ContentView.swift in Sources */,
+				323F26E52B23F018008B1A29 /* ToDoListView.swift in Sources */,
+				323F26E72B23F452008B1A29 /* ToDoModel.swift in Sources */,
+				323F26D82B23DF1E008B1A29 /* TasksView.swift in Sources */,
 				323F26D62B23DF1E008B1A29 /* SwiftUI_Intro2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +280,7 @@
 				DEVELOPMENT_TEAM = WN2YL6YWCV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "SwiftUI-Intro2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +309,7 @@
 				DEVELOPMENT_TEAM = WN2YL6YWCV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "SwiftUI-Intro2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
